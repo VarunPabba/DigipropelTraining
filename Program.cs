@@ -1,19 +1,21 @@
 ﻿using System;
 
-namespace Sample1
+namespace Classes_Objects
 {
     class Program
     {
-        static string employee = "Shallim";
-        public static void Main(String[] args)
+        String Colour = "Red";
+
+        String Colour1 = "Orange";
+        static void Main(string[] args)
         {
-            
-            Console.WriteLine(employee);
-            Method();
-        }
-        static void Method()
-        {
-            Console.WriteLine("How Do You Do");
+        Program obj = new Program();
+        Console.WriteLine(obj.Colour);
+        
+       Program obj1= new Program();   //This type of declaration throws error because multiple
+        Console.WriteLine(obj1.Colour);   //Calling multiple variables using singlke Object
+        Console.WriteLine(obj1.Colour1);
+        
         }
     }
 }
