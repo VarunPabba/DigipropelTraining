@@ -1,0 +1,24 @@
+using System;
+
+namespace Array_Reversal
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+             int[] arr1={2,3,5};
+             int[] arr2=new int[arr1.Length];
+             int j=0;
+              for(int i=arr1.Length-1;i>= 0;i--)
+                {
+                   arr2[j] = arr1[i];
+                   j++;
+                }
+             Console.WriteLine("array is");
+               for(int i=0;i<j;i++)
+               {
+                   Console.WriteLine(arr2[i]);
+               }
+         }
+     }
+}
