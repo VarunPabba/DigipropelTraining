@@ -1,0 +1,10 @@
+using System;
+class LengthOfString
+{
+  static void Main()
+  {
+    string name="w3resource.com";
+    int nameLength = name.Length;
+    Console.WriteLine(nameLength);
+  }
+}
